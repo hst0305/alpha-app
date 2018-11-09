@@ -14,25 +14,27 @@
         </nav>
         <full-page :options="options" id="fullpage">
             <div class="section fp-auto-height">
-                <first-panel ref="fPanel" ></first-panel>
+                <first-panel :appData=staticData.webInfo ref="fPanel" ></first-panel>
             </div>
             <div class="section fp-auto-height">
-                <two-panel :appData=staticData.forTraders ></two-panel>
+                <two-panel :appData=staticData.forTraders :R=R></two-panel>
             </div>
+            <!--
             <div class="section fp-auto-height">
                 <three-panel :appData=staticData.pageThree :R=R></three-panel>
             </div>
             <div class="section fp-auto-height">
                 <four-panel :appData=staticData.pageFour :R=R></four-panel>
             </div>
+            -->
             <div class="section fp-auto-height">
-                <exchange-panel :appData=staticData.exchange ></exchange-panel>
+                <exchange-panel :appData=staticData.exchange :R=R></exchange-panel>
             </div>
             <div class="section fp-auto-height">
-                <team-panel :appData=staticData.ourPartners ></team-panel>
+                <team-panel :appData=staticData.teamInfo :R=R></team-panel>
             </div>
             <div class="section fp-auto-height">
-                <ourPartners-panel :appData=staticData.ourPartners ></ourPartners-panel>
+                <ourPartners-panel :appData=staticData.ourPartners :R=R></ourPartners-panel>
             </div>
             <!--
             <div class="section section5 fp-auto-height">
@@ -46,7 +48,7 @@
             </div>
             -->
             <div class="section fp-auto-height">
-                <eight-panel :appData=staticData.pageEight :R=R></eight-panel>
+                <eight-panel :appData=staticData.footerInfo :R=R></eight-panel>
             </div>
         </full-page>
     </div>
@@ -81,7 +83,7 @@ import appData from '../static/data.json'
           navigationPosition:'right',
           fitToSection:false,
           anchors: appData.pageList,
-          sectionsColor: ['#34495e', '#ffffff', '#f8f8f8', '#ffffff', '#ffffff', '#f8f8f8', '#ffffff', '#000000']
+          sectionsColor: ['#34495e', '#ffffff', '#f8f8f8', '#ffffff', '#ffffff', '#000000']
         },
         staticData:appData,
         R:R

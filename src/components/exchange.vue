@@ -10,8 +10,10 @@
     </div>
     <div class="row multi-columns-row">
 
-      <div class="col-md-2 col-sm-4 col-xs-12 mt50" v-for="(item,index) in appData.list" :key="index">
-            <img src="../assets/game1.png" />
+      <div class="col-md-3 col-sm-3 col-xs-3 mt50 tc" v-for="(item,index) in appData.list" :key="index">
+            <h3 class="tc">{{item.title}}</h3>
+            <img class="mt30" :src=' R.ysyte[index]' />
+            <p class="mt30">{{item.content}}</p>
       </div>
 
     </div>
@@ -31,6 +33,10 @@ export default {
     appData: {
       type: Object,
       default: {}
+    },
+    R: {
+      type: Object,
+      default: {}
     }
   }
 
@@ -40,10 +46,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img{
-  max-width:100%;
+  /* max-width:75%; */
+  width: 210px;
+  height: 210px;
 }
 .container {
-    background: #fff;
     font: 400 12px/1.8 "Open Sans", sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;

@@ -3,42 +3,26 @@
     <div class="row mt50 multi-columns-row">
 
       <div class="col-md-6 col-sm-6 col-xs-12 tc">
-        <h3>团队介绍</h3>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
-        <p>团队信息团队信息团队信息</p>
+        <h3>{{appData.title}}</h3>
+        <p v-for="(item,index) in appData.desList" :key="index">
+          {{item}}
+        </p>
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="row">
-        
-          <div class="col-md-3 col-sm-3 col-xs-3">
-            <img src="../assets/game1.png" />
-            <img src="../assets/game1.png" />
-            <img src="../assets/game1.png" />
-            <img src="../assets/game1.png" />
-            <img src="../assets/game1.png" />
-          </div>
-          <div class="col-md-9 col-sm-3 col-xs-9">
-            <h3>媒体报道</h3>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
-            <p>报道信息报道信息报道信息</p>
+      <div class="col-md-6 col-sm-6 col-xs-12 teamMT">
+          <h3 class="mt-title">{{appData.newInfo.title}}</h3>
+          <div class="row" v-for="(item,index) in appData.newInfo.list" :key="index+1000">
+
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img :src="R.teamMT[index]" />
+            </div>
+            <div class="col-md-9 col-sm-3 col-xs-9">
+              <a :href="item.link" target="_block">
+                {{item.title}}
+              </a>
+            </div>
           </div>
 
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -56,6 +40,10 @@ export default {
     appData: {
       type: Object,
       default: {}
+    },
+    R: {
+      type: Object,
+      default: {}
     }
   }
 
@@ -69,8 +57,24 @@ export default {
     color: #666;
     -webkit-font-smoothing: antialiased;
 }
+.container>div{
+  margin-top:100px;
+}
 img{
   max-width:100%;
   margin-top:8px;
+}
+.iconList{
+  margin-top:33px;
+}
+
+.teamMT h3{
+  padding-left: 150px;
+}
+.teamMT a{
+  margin-top:7px;
+  display: block;
+  color:#666;
+  width:200px;
 }
 </style>

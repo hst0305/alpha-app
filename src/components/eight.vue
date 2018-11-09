@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row mt30">
 				<div class="col-lg-3 col-md-6">
-          <div class="bc tc">
+          <div class="bc tc mt30">
 					  <img class="f_logo" :src="R.footerLogo" alt="">
           </div>
 				</div>

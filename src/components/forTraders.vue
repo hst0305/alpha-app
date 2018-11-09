@@ -8,7 +8,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12 mt50" v-for="(item,index) in appData.list" :key="index">
         <div class="features-item">
           <div class="tc">
-            <i class="el-icon-mobile-phone"></i>
+            <i :class="item.class" />
           </div>
           <h3 class="tc features-title t-font">{{item.title}}</h3>
           <p class="tc">
@@ -34,6 +34,10 @@ export default {
     appData: {
       type: Object,
       default: {}
+    },
+    R: {
+      type: Object,
+      default: {}
     }
   }
 
@@ -48,7 +52,7 @@ export default {
     color: #666;
     -webkit-font-smoothing: antialiased;
 }
-i{font-size:42px;}
+i{font-size:60px;}
 .t-font{
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -74,5 +78,9 @@ i{font-size:42px;}
 }
 .features-item{
   color:#666;
+}
+.features-item img{
+  width:100px;
+  height: 100px;
 }
 </style>

@@ -26,15 +26,15 @@
       </video-player>
     </div> 
     <div class="title">
-      <div class="titan-title-size" >We would like to present to you,</div>
-      <div class="titan-title-size-4">Arbitrage Crypto Trader</div>
-      <div class="titan-title-size">trading crypto-currency terminal for trading on two exchanges simultaneously!</div>
+      <div class="titan-title-size" >{{appData.helloInfo}}</div>
+      <div class="titan-title-size-4">{{appData.name}}</div>
+      <div class="titan-title-size">{{appData.des}}</div>
     </div>
   </div>
 </template>
 
 <script>
-import webm from '@/assets/main.webm'
+import webm from '@/assets/main.mp4'
 export default {
   name: 'firstPanel',
   data () {
@@ -64,6 +64,10 @@ export default {
       }
   },
   props: {
+    appData: {
+      type: Object,
+      default: {}
+    }
   }
 
 }

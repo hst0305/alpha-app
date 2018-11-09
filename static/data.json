@@ -1,91 +1,19 @@
 {
-    "webData":{
+    "webInfo":{
         "name":"阿尔法量化",
-        "des_cn":"全球数字货币一站式量化交易平台",
-        "des_en":"轻松量化 聪明套利"
+        "des":"全球数字货币一站式量化交易平台",
+        "helloInfo":"轻松量化 聪明套利"
     },
-    "pageList":["page1","page2","page3","page4","page5","page6","page7","page8","page9","page10"],
+    "pageList":["home","server","page3","page4","page5","page6"],
     "navList":[
-        {"id":0,"pageIndex":"page1","name":"首页"},
-        {"id":1,"pageIndex":"page2","name":"产品与服务"},
+        {"id":0,"pageIndex":"home","name":"首页"},
+        {"id":1,"pageIndex":"server","name":"产品与服务"},
         {"id":2,"pageIndex":"page3","name":"优势与特色"},
         {"id":3,"pageIndex":"page4","name":"接入交易所"},
         {"id":4,"pageIndex":"page5","name":"问题与帮助"},
         {"id":5,"pageIndex":"page6","name":"关于我们"}
-    ]
-	,
-	
-    "iconList":[
-        {"resIndex":0,"name":"行业解决方案"},
-        {"resIndex":1,"name":"线上应用"},
-        {"resIndex":2,"name":"线下体验"},
-        {"resIndex":3,"name":"游戏"},
-        {"resIndex":4,"name":"VR光学"},
-        {"resIndex":5,"name":"VR播放器"}
     ],
-    "pageTwo":{
-        "title":"行业应用定制解决方案",
-        "des":["经过深入的市场研究与洞察","我们为旅游、地产、教育、医疗、公共事业等产业","量身定制虚拟数字解决方案"],
-        "detail_link":"http//www.baicu.com",
-        "hy_list":[
-            {"resIndex":0,"name":"行业定制服务"},
-            {"resIndex":1,"name":"数字展厅"},
-            {"resIndex":2,"name":"辅助营销"},
-            {"resIndex":3,"name":"全景视频"},
-            {"resIndex":4,"name":"创意输出"},
-            {"resIndex":5,"name":"整合传播"}
-        ]
-
-    },
-    "pageThree":{
-        "title":"VR线上应用",
-        "subTtitle":"应用下载｜海量资讯｜在线工具｜VR影音",
-        "des":"专业的VR应用下载平台，支持PC端、IOS和Android端提供上千款的VR精品应用下载服务.",
-        "detail_link":"http//www.baicu.com"
-    },
-    "pageFour":{
-        "title":"VR线下体验馆",
-        "subTtitle":"中控系统｜后台管理｜在线商城｜内容制作｜动感座椅｜合作",
-        "subTitile2":"最好用的VR线下中控平台,满足多种形态线下体验店运营",
-        "des":"为用户提供VR线下体验从品牌建设、商业运营、硬件接入、游戏匹配及售后等一系列整套运营方案",
-        "detail_link":"http//www.baicu.com"
-    },
-    "pageFive":{
-        "title":"VR Games",
-        "des":["新颖刺激高度逼真，为用户带来最极致的VR体验","在VR游戏领域有丰富的研发经验，国内外顶尖的VR游戏制作提供商"],
-        "list":[
-            {"resIndex":0,"name":"亚健康大作战"},
-            {"resIndex":1,"name":"万圣节惊魂"},
-            {"resIndex":2,"name":"致命感染"},
-            {"resIndex":3,"name":"离心力"}
-        ]
-    },
-    "pageSix":{
-        "title":"VR光学解决方案",
-        "des":[
-            "全新光学产品｜解决方案定制｜VR设计方案｜配套技术支持",
-            "奇境科技与利达光电联合，针对移动VR市场推出“利境”VR光学镜片产品",
-            "该镜片产品在畸变方案、透光率、视场角均达到了世界领先水品，为用户的移动VR产品提供最好的光学解决方案"
-        ]
-    },
-    "pageSeven":{
-        "title":"企业介绍",
-        "subTitle":[
-            "团队核心成员超过10年的VR/AR研发经验",
-            "服务近百个行业项目经验",
-            "技术人员占团队80%，跨专业跨学科整合能力强"
-        ],
-        "des":[
-            "深圳市奇境信息技术有限公司是一家专注于VR&AR技术应用与研发、软件开发、系统集成、多媒体数字化展示的高科技企业，先后研发了业内领先的VR视频播放器、VR线下娱乐/VR院线管理平台、多款VR游戏及跨行业的VR内容定制服务。为促进行业的发展作出了不可或缺的贡献。"
-        ],
-        "list":[
-            {"resIndex":0,"title":"安迅咨询携手奇境科技为宝安区开展VR应急演练","content":"近日，安迅咨询携手奇境科技为深圳市宝安区策划举办了“宝安区2017地质灾害和危险边坡数字化沙盘应急演练”。莅临现场观摩的有深圳市规划和国土资源委员会相关领导、宝安区地质灾害防治工作领导小组各成员单位和石岩街道各社区工作站负责同志。"},
-            {"resIndex":1,"title":"安迅咨询携手奇境科技为宝安区开展VR应急演练","content":"近日，安迅咨询携手奇境科技为深圳市宝安区策划举办了“宝安区2017地质灾害和危险边坡数字化沙盘应急演练”。莅临现场观摩的有深圳市规划和国土资源委员会相关领导、宝安区地质灾害防治工作领导小组各成员单位和石岩街道各社区工作站负责同志。"},
-            {"resIndex":2,"title":"安迅咨询携手奇境科技为宝安区开展VR应急演练","content":"近日，安迅咨询携手奇境科技为深圳市宝安区策划举办了“宝安区2017地质灾害和危险边坡数字化沙盘应急演练”。莅临现场观摩的有深圳市规划和国土资源委员会相关领导、宝安区地质灾害防治工作领导小组各成员单位和石岩街道各社区工作站负责同志。"}
-
-        ]
-    },
-    "pageEight":{
+    "footerInfo":{
         "business":{
             "title":"业务合作",
             "list":[
@@ -111,15 +39,16 @@
     },
     "forTraders":{
       "title":"产品与服务",
+      "注意":"下面的class值是对应显示的图标，图标列表这里http://element-cn.eleme.io/#/zh-CN/component/icon",
       "list":[
-        {"title":"行情监测","content":"7*24小时自动监测行情不放过每一毫秒套利机会"},
-        {"title":"两角套利","content":"两个交易所间相同交易对之间的无风险对冲套利"},
-        {"title":"三角套利","content":"多个交易所间不同交易对之间的无风险对冲套利"},
-        {"title":"站内套利","content":"同一个交易所不同交易对之间的无风险对冲套利"},
-        {"title":"趋势套利","content":"多个交易所不同线趋势变化实时分析全自动交易"},
-        {"title":"投研报告","content":"精准挖掘海量行情数据好收益来自好的投研报告"},
-        {"title":"账户管家","content":"一点登录监控管理所有交易所币种账户动态变化"},
-        {"title":"套利社群","content":"汇聚行业大咖、矿主、项目方只谈赚币不谈情怀"}
+        {"title":"行情监测","content":"7*24小时自动监测行情不放过每一毫秒套利机会","class":"el-icon-view"},
+        {"title":"两角套利","content":"两个交易所间相同交易对之间的无风险对冲套利","class":"el-icon-share"},
+        {"title":"三角套利","content":"多个交易所间不同交易对之间的无风险对冲套利","class":"el-icon-news"},
+        {"title":"站内套利","content":"同一个交易所不同交易对之间的无风险对冲套利","class":"el-icon-tickets"},
+        {"title":"趋势套利","content":"多个交易所不同线趋势变化实时分析全自动交易","class":"el-icon-menu"},
+        {"title":"投研报告","content":"精准挖掘海量行情数据好收益来自好的投研报告","class":"el-icon-mobile-phone"},
+        {"title":"账户管家","content":"一点登录监控管理所有交易所币种账户动态变化","class":"el-icon-setting"},
+        {"title":"套利社群","content":"汇聚行业大咖、矿主、项目方只谈赚币不谈情怀","class":"el-icon-upload"}
       ] 
     },
     "exchange":{
@@ -134,17 +63,47 @@
         {"title": "全面","content": "未来将覆盖全球100+交易所，1000+数字资产，100000+交易组合"}
       ] 
     },
+    "teamInfo":{
+        "title":"团队介绍",
+        "desList":[
+          "阿尔法创始团队",
+          "成功管理超过400亿资产",
+          "核心成员毕业知名院校金融，计算机专业",
+          "具有多年金融行业投资，研发，运营经验",
+          "以‘轻松量化，聪明投资’ 做为使命",
+          "秉承‘用户至上’的服务宗旨",
+          "致力于打造全球数字货币量化交易平台为愿景",
+          "为您的数字资产保驾护航"
+        ],
+        "newInfo":{
+            "title": "媒体报道",
+            "list":[
+                {
+                    "title":"阿尔法套利宝AbrBao推出数字货币自动交易软件机器人",
+                    "link":"https://baijiahao.baidu.com/s?id=1612777810561073441&wfr=spider&for=pc"
+                },
+                {
+                    "title":"数字货币量化搬砖套利详解（史上最全）",
+                    "link":"http://www.weilaicaijing.com/article/15184"
+                },
+                {
+                    "title":"阿尔法：今日搬砖套利1.29万USDT 如果我们都死了 他仍将继续交易",
+                    "link":"https://www.jinse.com/bitcoin/254579.html"
+                }
+              ]
+            }
+      },
     "ourPartners":{
       "title":"合作交易所",
       "list":[
-        {"title":"Huobi","content":""},
-        {"title":"Okex","content":""},
-        {"title":"Binance","content":""},
-        {"title":"ZB","content":""},
-        {"title":"Fcoin","content":""},
-        {"title":"Gate","content":""},
-        {"title":"Exx","content":""},
-        {"title":"Hadax","content":""}
+        {"title":"Huobi","content":"不要文本和标题留空就行"},
+        {"title":"Okex","content":"不要文本和标题留空就行"},
+        {"title":"Binance","content":"不要文本和标题留空就行"},
+        {"title":"ZB","content":"不要文本和标题留空就行"},
+        {"title":"Fcoin","content":"不要文本和标题留空就行"},
+        {"title":"Gate","content":"不要文本和标题留空就行"},
+        {"title":"Exx","content":"不要文本和标题留空就行"},
+        {"title":"Hadax","content":"不要文本和标题留空就行"}
       ] 
     }
 }

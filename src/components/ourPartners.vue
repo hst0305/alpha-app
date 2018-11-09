@@ -5,8 +5,10 @@
     </div>
     <div class="row multi-columns-row">
 
-      <div class="col-md-3 col-sm-6 col-xs-12 mt50" v-for="(item,index) in appData.list" :key="index">
-            <img src="../assets/game1.png" />
+      <div class="col-md-3 col-sm-6 col-xs-12 mt50 tc par-list" v-for="(item,index) in appData.list" :key="index">
+          <h3>{{item.title}}</h3>
+          <img class="mt10" :src="R.ourPartners[index]" />
+          <p class="mt10">{{item.content}}</p>
       </div>
 
     </div>
@@ -26,6 +28,10 @@ export default {
     appData: {
       type: Object,
       default: {}
+    },
+    R: {
+      type: Object,
+      default: {}
     }
   }
 
@@ -34,8 +40,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img{
-  max-width:100%;
+.par-list img{
+  width: 100px;
+  height: 100px;
 }
 .container {
     background: #fff;
